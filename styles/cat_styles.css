@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Overlock+SC&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+content {
+    max-width: 500px;
+    width: 100%
+}
+nav {
+    display: flex;
+    justify-content:space-around;
+}
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #FFEE32;
+    padding: 40px;
+}
+nav a:hover {
+    background-color: #FFEE32;
+    color: black;
+}
+.logo {
+    width: 100px;
+}
+#logo_cat {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: black;
+    background-repeat: repeat;
+    background-size: auto 100px;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#hero-img1 {
+    width: 100%;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg h1 {
+    text-align: center;
+    color: #FFEE32;
+}
+#hero-msg h4 {
+    color: #FFEE32;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -50px;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 125px;
+}
+.home-title {
+    color: black;
+    font-size: 3em;
+    font-family: 'Overlock SC', 'Lora', 'helvetica', 'sans-serif';
+    margin-top: 10px;
+}
+.home-title_1 {
+    color: black;
+    font-size: 2em;
+    font-family: 'Overlock SC', 'Lora', 'helvetica', 'sans-serif';
+    margin: 20px 0px;
+    text-align: center;
+    grid-column: 1/3;
+}
+body {
+    background-color: #D6D6D6;
+    font-family: 'Overlock SC', 'Lora', 'helvetica', 'sans-serif';
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+.msg_1 {
+    background-color: #202020;
+    line-height: 1.5em;
+    padding: 45px;
+    grid-row: 2/3;
+    grid-column: 2/10;
+    text-align: center;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px black;
+}
+.msg_1 h1 {
+    color: #FFEE32;
+    font-size: 50px;
+    font-weight: 200;
+}
+.msg_1 p {
+    font-size: 26px;
+    color: whitesmoke;
+    font-family: 'Lora', 'helvetica', 'sans-serif';
+}
+.msg_2 {
+    background-color: #202020;
+    line-height: 2em;
+    padding: 45px;
+    grid-row: 4/5;
+    grid-column: 2/10;
+    text-align: center;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px black;
+}
+.msg_2 h4 {
+    color: #FFEE32;
+    font-size: 40px;
+}
+.loadcatfacts1 {
+    font-size: 30px;
+    background-color: black;
+    color: #FFEE32;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+.loadcatfacts2 {
+    font-size: 30px;
+    background-color: black;
+    color: #FFEE32;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+.loadcatfacts3 {
+    font-size: 30px;
+    background-color: black;
+    color: #FFEE32;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+.loadcatfacts1:hover {
+    background-color: #FFEE32;
+    color: black;
+}
+.loadcatfacts2:hover {
+    background-color: #FFEE32;
+    color: black;
+}
+.loadcatfacts3:hover {
+    background-color: #FFEE32;
+    color: black;
+}
+.button-box {
+    margin-top: 90px;
+}
+#displayFacts {
+    grid-column: 1/11;
+    grid-row: 4/5;
+}
+#displayFacts h4 {
+    font-weight: 200;
+}
+footer {
+    background-color: black;
+    color: #FFEE32;
+    padding: 25px 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ /* responsive layout */
+ @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    #hero, .home-grid{
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin: 0;
+    }
+    #hero-msg h1, h4 {
+        font-size: 40px;
+        margin-top: -100px;
+        color: #FFEE32;
+        background-color: black;
+        padding: 1em;
+    }
+    .msg_1, .msg_2{
+        display: block;
+        margin: 0;
+        box-shadow: none;
+    }
+    .msg_1 h4 {
+        font-size: 28px;
+    }
+    .msg_1 h1 {
+        font-size: 40px;
+    }
+    .msg_1 p {
+        font-size: 24px
+    }
+    .msg_2 h1 {
+        font-size: 28px;
+    }
+    #logo_cat, .logo {
+        display: none;
+    }
+    .button-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    #displayFacts h4 {
+        font-size: 30px;
+        font-weight: 100;
+        line-height: 1em;
+        margin: 0;
+    }
+    footer {
+        margin-top: 25px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
