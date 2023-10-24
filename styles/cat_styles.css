@@ -217,6 +217,9 @@ footer {
         background-color: black;
         padding: 1em;
     }
+    #hero-msg {
+        margin-top: 0;
+    }
     .msg_1, .msg_2{
         display: block;
         margin: 0;
@@ -229,7 +232,7 @@ footer {
         font-size: 40px;
     }
     .msg_1 p {
-        font-size: 24px
+        font-size: 20px
     }
     .msg_2 h1 {
         font-size: 28px;
@@ -242,8 +245,21 @@ footer {
         flex-direction: column;
         margin: 0;
     }
+    #button1.loadcatfacts1 {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    #button2.loadcatfacts2 {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    #button3.loadcatfacts3 {
+        margin-top: 30px;
+        margin-bottom: -40px;
+        font-size: 24px;
+    }
     #displayFacts h4 {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 100;
         line-height: 1em;
         margin: 0;
