@@ -74,9 +74,8 @@ const getCatFacts = async (numCatFacts) => {
 
   // we dont want the words feces or aids or youtube links to appear so we try again if these are found. 
   let index = catFactList.findIndex((fact) => {
-    if (fact.toLowerCase().includes("feces", "aids", "youtube")){
-      return true;
-    }
+    const loweredFact = fact.toLowerCase();
+    return loweredFact.includes("feces") || loweredFact.includes("aids") || loweredFact.includes("https://www.youtube.com/watch?v=gc5m0agc_ei");
   });
   // if index is -1 we didn't find the words so we don't need to call it again. 
   if (index != -1 && apiCallRetryCount < 6){
